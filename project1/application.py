@@ -94,15 +94,15 @@ def logout():
     flash('See you next time!','success')
     return redirect ('index')
 
-# #books page listing all books
-# @app.route('/books', methods=['GET'])
-# # @login_required
-# def get_books():
-#     # for current_user in users:
-#     books = db.execute('SELECT * FROM books ORDER BY title')
-#     print(books)
-#     # return jsonify({'books':[dict(row) for row in books]})
-#     return render_template('books.html', books=books)
+#books page listing all books
+@app.route('/books', methods=['GET'])
+# @login_required
+def get_books():
+    # for current_user in users:
+    books = db.execute('SELECT * FROM books ORDER BY title')
+    print(books)
+    # return jsonify({'books':[dict(row) for row in books]})
+    return render_template('books.html', books=books)
 
 # #books search results
 # @app.route('/books/search/<string:search>')
