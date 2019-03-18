@@ -1,0 +1,23 @@
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+  border-radius: 20px 20px !important;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+brand-logo{
+  font-family: bell mt;
+font-size:60px !important;
+font-weight:bolder !important;
+padding: 20px 20px !important;
+border-radius: 0 20px !important;
+}
+
+footer{
+  padding-top:50px;
+}
