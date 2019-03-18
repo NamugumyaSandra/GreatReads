@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {% for book in books %}
+    <ul class="collection">
+        <li class="collection-item">
+          <span class="title black-text">Title: <a class="black-text" href="{{ url_for('get_books', title=book.title)}}">{{ book.title }}</a></span>
+          <p class="black-text">Author: <a class="mb-2 black-text" href="{{url_for('get_books',author=book.author)}}">{{ book.author }} </a><br>
+            isbn: <a class="black-text" href="{{ url_for('get_books', isbn=book.isbn)}}">{{ book.isbn}}</a> <br>
+            year: <a class="mb-2 black-text" href="{{url_for('get_books',year=book.year)}}">{{ book.year }}</a> 
+          </p>
+        </li>
+    </ul>
+    {% endfor %}
+{% endblock content %}

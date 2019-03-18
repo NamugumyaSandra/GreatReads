@@ -1,0 +1,203 @@
+
+  {%extends "layout.html"%}   
+   {%block content%}  
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{{url_for('static',filename='img/kumar.jpg')}}">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h2 style="font-size:70px;" >Love Reading?</h2>
+          
+        </div>
+      </li>
+      <li>
+        <img src="{{url_for('static',filename='img/lilly.jpg')}}">
+        <!-- random image -->
+        <div class="caption left-align">
+          <h2 style="font-size:70px;">Join the World's Biggest Book Review Website</h2>
+          
+        </div>
+      </li>
+      <li>
+        <img src="{{url_for('static',filename='img/veroniki.jpg')}}">
+        <!-- random image -->
+        <div class="caption right-align">
+          <h2 style="font-size:70px;">GreatReads.Com</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">"For the Great Minds"</h5>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  
+  <section class="section section-follow teal darken-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>About Us</h4>
+          <hr>
+          <p>Great Reads  was born out of passion to provide the community with quality, fun to read and learn reading material. We believe a good read ,can create a memorable moment to cherish in all throughout the day. </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: our team -->
+  <section id="popular" class="section section-ourteam">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          <span class="teal-text">Our </span> Team</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{url_for('static',filename='img/pp.jpeg')}}" alt="">
+              
+            </div>
+            <div class="card-content">
+                <span class="card-title">Director: Mrs. Sandra Namugumya</span>
+              She lives by example, with over 12 years of  Experience in software Engineering. She very cheerful and an inspirational young lady with alot determination.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src=" {{url_for('static',filename='img/pros.jpeg')}}" alt="">
+            
+            </div>
+            <div class="card-content">
+                <span class="card-title">C.E.O: Miss. Mugeni Prossy </span>
+              She is a determined and Hard working "Go Getter",  She has a first class degree in computer engineering ,with 3 years of expertise in software development.  
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{url_for('static',filename='img/ema.jpeg')}}" alt="">
+             
+            </div>
+            <div class="card-content">
+                <span class="card-title">Head B.o.G:Eng Emma Semutenga</span>
+              He has over 8 years of experience in Software Engineering and is one of the founders of Great Reads.com. He a very hard working, self driven and focused person. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Follow -->
+  <section class="section section-follow teal darken-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow GreatReads</h4>
+          <p>Follow us on social media for special offers</p>
+          <a href="#" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-google-plus fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-pinterest fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section:  popular books -->
+  
+   <section class="section section-icons grey lighten-4 center">
+      <h3><span class="teal-text">Popular </span> Books</h3>
+    <div class="container">
+        
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+              <img src="{{url_for('static',filename='img/veroniki.jpg')}}" width="200" height:="200" alt="">
+             
+            <h4>Mad about the Boy</h4>
+            <p>This is the most read book of all times especially by the youth.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+              <img src="{{url_for('static',filename='img/san.jpg')}}" width="250" height:="250" alt="">
+             
+            <h4>2016</h4>
+            <p>This book contains all historical eventsof 2016.It contains the good, the bad, and the ugly for the 2016.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+              <img src="{{url_for('static',filename='img/16bk.jpeg')}}" width="100" height:="100" alt="">
+             
+            <h4>Python</h4>
+            <p>A book designed specifically for programmers especially those who need assistance with their python code.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- Section: Contact -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel teal white-text center">
+            <i class="material-icons">email</i>
+            <h5>Contact Us</h5>
+            <p>Phone | 0759551329/ 0788557706<br>
+
+                Email | info@greatreads.com<br>
+                website | www.greatreads.com
+                
+                </p>
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>Location</h4>
+            </li>
+            <li class="collection-item">Design Hub/DHK</li>
+            <li class="collection-item">Plot 45</li>
+            <li class="collection-item">Industrial area, Kamplala Uganda</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-3 text-center">
+            <h6 class="center">QUESTIONS|CONCERNS|QUERRIES</h6>
+            <h6 class="center">Let Us Know, we will get back to you ASAP!</h6>
+            <div class="input-field">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone">
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%endblock content%}
+
+  
